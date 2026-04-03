@@ -1,0 +1,24 @@
+================================================================================
+INICIO DE DESCARGA DE DATASETS
+Proyecto: C:\Users\ELVYN\OneDrive\Desktop\TFM\TFM_Model
+Timestamp: 20260403_191906
+================================================================================
+[HF] Descargando textdetox/multilingual_toxicity_dataset | split=es
+[OK] Guardado CSV: C:\Users\ELVYN\OneDrive\Desktop\TFM\TFM_Model\data\external\hf_multilingual_toxicity_dataset_es\multilingual_toxicity_dataset_es.csv
+[OK] Guardado Parquet: C:\Users\ELVYN\OneDrive\Desktop\TFM\TFM_Model\data\external\hf_multilingual_toxicity_dataset_es\multilingual_toxicity_dataset_es.parquet
+[OK] Filas: 5000 | Columnas: 2
+[HF] Descargando textdetox/multilingual_toxicity_explained | split=es
+[OK] Guardado CSV: C:\Users\ELVYN\OneDrive\Desktop\TFM\TFM_Model\data\external\hf_multilingual_toxicity_explained_es\multilingual_toxicity_explained_es.csv
+[OK] Guardado Parquet: C:\Users\ELVYN\OneDrive\Desktop\TFM\TFM_Model\data\external\hf_multilingual_toxicity_explained_es\multilingual_toxicity_explained_es.parquet
+[OK] Filas: 931 | Columnas: 7
+[HF] Descargando textdetox/multilingual_paradetox | split=es
+[OK] Guardado CSV: C:\Users\ELVYN\OneDrive\Desktop\TFM\TFM_Model\data\external\hf_multilingual_paradetox_es\multilingual_paradetox_es.csv
+[OK] Guardado Parquet: C:\Users\ELVYN\OneDrive\Desktop\TFM\TFM_Model\data\external\hf_multilingual_paradetox_es\multilingual_paradetox_es.parquet
+[OK] Filas: 400 | Columnas: 2
+[GIT] Clonando https://github.com/microsoft/Clandestino.git -> C:\Users\ELVYN\OneDrive\Desktop\TFM\TFM_Model\data\external\clandestino\repo
+[OK] Repo clonado correctamente
+[GIT] Clonando https://github.com/alvaro-mazcu-herreros/DETOXIS_2021.git -> C:\Users\ELVYN\OneDrive\Desktop\TFM\TFM_Model\data\external\detoxis\repo
+[OK] Repo clonado correctamente
+================================================================================
+DESCARGA COMPLETADA
+================================================================================

@@ -1,0 +1,12 @@
+{
+  "dataset_name": "textdetox/multilingual_paradetox",
+  "split": "es",
+  "rows": 400,
+  "columns": [
+    "toxic_sentence",
+    "neutral_sentence"
+  ],
+  "downloaded_at": "2026-04-03T19:19:32.601186",
+  "csv_path": "C:\\Users\\ELVYN\\OneDrive\\Desktop\\TFM\\TFM_Model\\data\\external\\hf_multilingual_paradetox_es\\multilingual_paradetox_es.csv",
+  "parquet_path": "C:\\Users\\ELVYN\\OneDrive\\Desktop\\TFM\\TFM_Model\\data\\external\\hf_multilingual_paradetox_es\\multilingual_paradetox_es.parquet"
+}

@@ -1,0 +1,17 @@
+{
+  "dataset_name": "textdetox/multilingual_toxicity_explained",
+  "split": "es",
+  "rows": 931,
+  "columns": [
+    "Sentence",
+    "Toxicity Level",
+    "Tone",
+    "Language",
+    "Implied Sentiment",
+    "Negative Connotations",
+    "__index_level_0__"
+  ],
+  "downloaded_at": "2026-04-03T19:19:26.627007",
+  "csv_path": "C:\\Users\\ELVYN\\OneDrive\\Desktop\\TFM\\TFM_Model\\data\\external\\hf_multilingual_toxicity_explained_es\\multilingual_toxicity_explained_es.csv",
+  "parquet_path": "C:\\Users\\ELVYN\\OneDrive\\Desktop\\TFM\\TFM_Model\\data\\external\\hf_multilingual_toxicity_explained_es\\multilingual_toxicity_explained_es.parquet"
+}

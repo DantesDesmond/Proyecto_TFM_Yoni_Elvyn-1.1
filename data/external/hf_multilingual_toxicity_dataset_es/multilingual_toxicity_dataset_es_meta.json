@@ -1,0 +1,12 @@
+{
+  "dataset_name": "textdetox/multilingual_toxicity_dataset",
+  "split": "es",
+  "rows": 5000,
+  "columns": [
+    "text",
+    "toxic"
+  ],
+  "downloaded_at": "2026-04-03T19:19:20.661749",
+  "csv_path": "C:\\Users\\ELVYN\\OneDrive\\Desktop\\TFM\\TFM_Model\\data\\external\\hf_multilingual_toxicity_dataset_es\\multilingual_toxicity_dataset_es.csv",
+  "parquet_path": "C:\\Users\\ELVYN\\OneDrive\\Desktop\\TFM\\TFM_Model\\data\\external\\hf_multilingual_toxicity_dataset_es\\multilingual_toxicity_dataset_es.parquet"
+}
