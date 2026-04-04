@@ -1,0 +1,7 @@
+﻿dataset,file_path,text_column,label_column,label_values,use_for,notes
+multilingual_toxicity_dataset_es,data/external/hf_multilingual_toxicity_dataset_es/multilingual_toxicity_dataset_es.csv,text,toxic,0=no_toxico;1=toxico,train,Dataset principal para baseline y primer transformer
+clandestino,data/external/clandestino/repo/data/clandestino_no_ontology_42023.json,Sentence,Annotators,score_promedio_desde_annotators->binario,train_optional,Dataset complementario; la etiqueta se calcula a partir del contenido de Annotators
+detoxis,data/external/detoxis/repo/data/DATASET_DETOXIS.csv,comment,toxicity,0=no_toxico;1=toxico,validation,Usar DATASET_DETOXIS.csv para validación externa; no usar test.csv porque no trae etiqueta
+multilingual_toxicity_explained_es,data/external/hf_multilingual_toxicity_explained_es/multilingual_toxicity_explained_es.csv,Sentence,Toxicity Level,Low;Medium;High,analysis,Útil para análisis cualitativo e interpretabilidad; no usar como dataset principal de entrenamiento
+multilingual_paradetox_es,data/external/hf_multilingual_paradetox_es/multilingual_paradetox_es.csv,toxic_sentence,SIN_ETIQUETA_EXPLICITA,toxic_sentence=ejemplo_toxico;neutral_sentence=version_reformulada,analysis,Usar para ejemplos y análisis; no sirve como dataset de clasificación supervisada directa
+youtube_own_sample,data/external/youtube_own_sample/PENDIENTE_CREAR.csv,text,label,0=no_toxico;1=toxico,final_validation,Muestra propia del proyecto para validación real en comentarios de YouTube
