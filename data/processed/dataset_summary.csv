@@ -1,6 +1,6 @@
 ﻿file,rows,label_0,label_1
-master_train_full.csv,5000,2500,2500
-train.csv,3500,1750,1750
-val.csv,750,375,375
-test.csv,750,375,375
+master_train_full.csv,10260,6130,4130
+train.csv,7182,4291,2891
+val.csv,1539,919,620
+test.csv,1539,920,619
 external_validation_detoxis.csv,3434,2296,1138

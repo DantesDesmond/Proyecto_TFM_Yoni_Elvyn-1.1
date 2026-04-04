@@ -22,6 +22,7 @@ CLANDESTINO_TOXIC_THRESHOLD = 3.0
 RANDOM_STATE = 42
 TEST_SIZE = 0.15
 VAL_SIZE = 0.15
+CLANDESTINO_HARM_QUESTION = "Question 1: In your opinion, will this text be harmful to anyone?"
 
 
 def clean_text(text: str) -> str:
@@ -81,12 +82,14 @@ def normalize_binary_label(series: pd.Series) -> pd.Series:
         text = str(value).strip().lower()
         if text in mapping:
             return mapping[text]
+
         try:
             num = float(text)
             if num in (0.0, 1.0):
                 return int(num)
         except Exception:
             return None
+
         return None
 
     return series.apply(_map)
@@ -109,66 +112,43 @@ def normalize_toxicity_level(series: pd.Series) -> pd.Series:
     return series.apply(_map)
 
 
-def _extract_numeric_scores(obj: Any, active_key: str = "") -> list[float]:
-    scores: list[float] = []
-
-    if isinstance(obj, dict):
-        for key, value in obj.items():
-            key_text = str(key).lower()
-            next_active = key_text if any(token in key_text for token in ["tox", "score"]) else active_key
-            scores.extend(_extract_numeric_scores(value, next_active))
-        return scores
-
-    if isinstance(obj, (list, tuple, set)):
-        for item in obj:
-            scores.extend(_extract_numeric_scores(item, active_key))
-        return scores
-
-    if isinstance(obj, (int, float)):
-        if active_key and not pd.isna(obj):
-            scores.append(float(obj))
-        return scores
-
-    if isinstance(obj, str):
-        text = obj.strip()
-        if not text:
-            return scores
-
-        # Si es un string serializado tipo JSON, intentar cargarlo
-        if text.startswith("{") or text.startswith("["):
-            try:
-                parsed = json.loads(text)
-                scores.extend(_extract_numeric_scores(parsed, active_key))
-                return scores
-            except Exception:
-                pass
-
-        if active_key:
-            try:
-                scores.append(float(text))
-            except Exception:
-                pass
-
-    return scores
-
-
 def extract_clandestino_score(value: Any) -> Optional[float]:
-    # Evita usar pd.isna sobre listas/dicts/arrays
     if value is None:
         return None
-
     if isinstance(value, float) and pd.isna(value):
         return None
 
-    scores = _extract_numeric_scores(value)
+    # Esperado: lista de dicts por anotador
+    if isinstance(value, list):
+        scores = []
+        for item in value:
+            if not isinstance(item, dict):
+                continue
+            raw = item.get(CLANDESTINO_HARM_QUESTION)
+            if raw is None:
+                continue
+            try:
+                score = float(raw)
+            except Exception:
+                continue
+            if 0 <= score <= 5:
+                scores.append(score)
 
-    # Filtrar valores absurdos por si aparecen otros números que no son score
-    scores = [s for s in scores if 0 <= s <= 5]
+        if not scores:
+            return None
+        return sum(scores) / len(scores)
 
-    if not scores:
-        return None
+    # A veces puede venir serializado como string JSON
+    if isinstance(value, str):
+        text = value.strip()
+        if text.startswith("[") or text.startswith("{"):
+            try:
+                parsed = json.loads(text)
+                return extract_clandestino_score(parsed)
+            except Exception:
+                return None
 
-    return sum(scores) / len(scores)
+    return None
 
 
 def normalize_clandestino_score(series: pd.Series, threshold: float = CLANDESTINO_TOXIC_THRESHOLD) -> pd.Series:
@@ -177,6 +157,7 @@ def normalize_clandestino_score(series: pd.Series, threshold: float = CLANDESTIN
         if score is None:
             return None
         return int(score >= threshold)
+
     return series.apply(_map)
 
 
@@ -205,7 +186,10 @@ def prepare_dataset(row: pd.Series) -> Optional[pd.DataFrame]:
         data["label"] = normalize_clandestino_score(df["Annotators"])
     else:
         if text_column not in df.columns:
-            raise KeyError(f"La columna de texto '{text_column}' no existe en {dataset_name}. Columnas reales: {df.columns.tolist()}")
+            raise KeyError(
+                f"La columna de texto '{text_column}' no existe en {dataset_name}. "
+                f"Columnas reales: {df.columns.tolist()}"
+            )
 
         data["text"] = df[text_column].astype(str)
         data["dataset_source"] = dataset_name
@@ -216,7 +200,10 @@ def prepare_dataset(row: pd.Series) -> Optional[pd.DataFrame]:
                 data["label"] = normalize_toxicity_level(df[label_column])
             else:
                 if label_column not in df.columns:
-                    raise KeyError(f"La columna de etiqueta '{label_column}' no existe en {dataset_name}. Columnas reales: {df.columns.tolist()}")
+                    raise KeyError(
+                        f"La columna de etiqueta '{label_column}' no existe en {dataset_name}. "
+                        f"Columnas reales: {df.columns.tolist()}"
+                    )
                 data["label"] = normalize_binary_label(df[label_column])
         else:
             data["label"] = None
