@@ -1,0 +1,51 @@
+﻿text_clean,label,baseline_pred,error_type,dataset_source
+"te lo mereces wey, eres un chingón, te la rifaste wey, a huevo wey",0,1,FP,multilingual_toxicity_dataset_es
+"no seas pendejo, esa oferta es una estafa, te van a quitar tu dinero y no te van a dar nada a cambio",0,1,FP,clandestino
+"la gente no sabe ni lo que dice, mongoloide es una forma de llamar a las personas con síndrome de down, no a los asiáticos. es una falta de respeto y de cultura",1,0,FN,multilingual_toxicity_dataset_es
+"ahora es a los españoles a quienes llaman idiotas (españoles, ¿sois idiotas?), y la crítica más ácida dice que áfrica empieza en los pirineos",1,0,FN,clandestino
+"¿y el asesino de los niños y los ancianos, el violador de mujeres embarazadas y el asesino del auditor fiscal? pues ellos tampoco tienen nada que ver, pero su castigo no es menor que el de los demás.",0,1,FP,clandestino
+la verdad yo no voy hacer como ustedes… no voy a seguir perdiendo el tiempo escribiendoles a ustedes por que la verdad no vale la pena…,0,1,FP,multilingual_toxicity_dataset_es
+me estaban chingue y chingue con eso y yo todo meco y pendejo les hice caso y un día que regresábamos de una misión en santa fé acepté a manejar el carro de regreso,0,1,FP,clandestino
+"¡ya me contaréis! un tipo despreciable: parásito desde joven viviendo de la política, un tipo totalmente carente de formación académica, un tipo sin escrúpulos y sin valores éticos y morales, un tipo nauseabundamente sectario, un maketo genuflexo ante el nazionalismo racista y supremacista vasco, un tipo desagradecido",1,0,FN,multilingual_toxicity_dataset_es
+tu amigo panzón y le dices que tiene más curvas que una carretera de montaña,0,1,FP,clandestino
+"la lujuriosa hermana mayor de las anarchy, es una sexy ""celebridad rubia"" que siempre está buscando a hombres guapos para tener sexo con ellos, sin embargo, debido a sus bajos estándares y a sus impulsos al final del acto sexual, siempre se siente insatisfecha.",1,0,FN,clandestino
+estar entretenidos con el demente cristiano los hace pasar el aburrimiento del servicio de guardia,1,0,FN,multilingual_toxicity_dataset_es
+los que toman el super internacional arroz con leche y te salen con un arroz zambito con su mazamorrita y su chichita con yapa pe casera,0,1,FP,multilingual_toxicity_dataset_es
+"ya era hora, de anular el nombre de esa choriza del centro cultural municipal, y de los honores concedidos en su día",1,0,FN,clandestino
+pues mira si te voy contestar no querer el f-35b para españa es precisamente ir en contra de los enemigos de españa y desde luego estoy a favor no solo de airbus si no de navantia o indra porque crean riqueza en este pais y permiten una mejor defensa de este pais pero destinar los presupuestos que no son ilimitados en un avión que no aporta nada a la defensa de españa y detrae recursos para otras partidas me parece estupido y mi encono es porque estoy esperando que me diga en concreto para que les sirve a españa el f-35b,0,1,FP,clandestino
+"simplemente no me gusta que se exprima la imagen de una mujer arpía, estratega e inconsciente",1,0,FN,clandestino
+@yihirm como si fuéramos putos nazis 😂,0,1,FP,multilingual_toxicity_dataset_es
+"las mujeres son demasiado histéricas, emocionales en exceso, se distraen con facilidad en trivialidades",1,0,FN,clandestino
+"activistas del aborto y homosexuales profanan la catedral de santiago de chile, durante la misa dominical por la fiesta del patrono de la ciudad",1,0,FN,multilingual_toxicity_dataset_es
+"esto a su vez ha resultado en una mentalidad de ""aceptación"" de las políticas neoliberales del nom, que se aprovechan de la ignorancia de los ciudadanos y han interferido en la libertad de expresión y otras libertades civiles básicas.",1,0,FN,clandestino
+acusación que ha sido una constante de la histérica oposición venezolana,1,0,FN,clandestino
+"no sea poco informado compa porque cree que se hizo el brexit? por xenofobia? el sistema publico ingles estaba colapsando, los migrantes estan mejor en uk que en el resto e europa y los que votaron es el pueblo de clase media los que que se dieron cuenta del problema, ahora los escandinavos y nordicos hace rato hicieron un parelé a los españoletes y migrantes de otros lados asi que el problema no es de aca informate",0,1,FP,clandestino
+"abel, en cambio, es un niño modelo que va a clases bien aseado, lee a gabriela mistral, escucha a clayderman y julio iglesias, su indisimulable amaneramiento convoca la maldad de los colegiales y, antes que nada, se desvive por su madrecita, a quien sueña un día sacar de ese barrio con tanto cholo e instalarla en miraflores",0,1,FP,clandestino
+y luego me van y me imponen la putada de tener que pagar un extra porque el puto bus tiene un retraso de dos horas,0,1,FP,clandestino
+"si las marcas no tienen donde hacer prensa me voy a reír mucho, yo ya avisé también estoy con lo que otro decía más arriba “síndrome argentino “la paja” ” si, es tal cual, yo tengo un público muy particular en mi blog personal que comenta mucho, pero la mayoría es subnormal, no comenta un carajo, menos en tech",1,0,FN,clandestino
+"ni caso a los rebuznos de los que quieren cambiar la historia, la lengua y la cultura de españa",1,0,FN,clandestino
+"y resulta irrelevante que las mujeres con burka sean conscientes del significado político actual de su velo o, al contrario, estén alienadas por el discurso político-religioso fundamentalista",0,1,FP,clandestino
+"en el sacrificio ritual, el sacerdote satánico o practicante que viola a un niño, está literalmente, ""sonando las campanas de los muchachos"" o ""sonando sus bolas"" desde un punto de vista muy gráfico y visual y bastante perverso, cuando él practica un obligado coito anal con el muchacho.",1,0,FN,multilingual_toxicity_dataset_es
+sí existen los subnormales y tiene colectivos llamados partidos políticos,1,0,FN,multilingual_toxicity_dataset_es
+que nayomi vaya a la junta y fastidie a la cara de boxer xd xd xd,0,1,FP,clandestino
+los catalanes no tenemos nada que hacer contra esta mafia corrupta que nos roba nuestros títulos y nuestra dignidad. visca el barça i visca catalunya lliure!,0,1,FP,clandestino
+"y ahora que? la jodida la hemos cagao, ninguna esperanza de remontar...pos eso, a seguir con la puta rutina de siempre.",0,1,FP,clandestino
+"estamos hablando de la soberbia, la prepotencia, la soberanía absoluta de los españolitos que quieren mangonear los pueblos, quieren callarnos, quieren silenciar la verdad, quieren imponernos sus leyes, quieren usurpar nuestros derechos, quieren despoblarnos, quieren exterminarnos.",1,0,FN,multilingual_toxicity_dataset_es
+"esta puta crisis y los putos recortes está acabando con la educación en este país, con nuestro futuro y con los sueños de muchos.",0,1,FP,clandestino
+"¿por qué dicen que 31,000 euros es caro por ir a rebuznar a las puertas del congreso?",0,1,FP,clandestino
+"lo mismo le quieren hacer a los venezolanos, pensando que somos unos vagos y unos desalmados",0,1,FP,clandestino
+"olvidé que eso no os interesa la que habeis provocado va a ser cojonuda, los arabes se aliaran todos contra israel y occidente tratará de protejer a los judíos, es muy gorda la que habeis liado",0,1,FP,clandestino
+!! el gobierno trata de implantar un chip a traves de la vacuna covid-19 para controlar a la poblacion mundial,1,0,FN,multilingual_toxicity_dataset_es
+parece que si no citas de carrerilla ocho o diez nombres americanos como si tomases café con ellos cada tarde eres un paleto,0,1,FP,clandestino
+"es claro que un ladrón diestro en escalamiento o un hábil asesino con navaja trapera ponen en mayor ""riesgo"" a la ""buena sociedad"" que un subnormal por desnutrición.",0,1,FP,clandestino
+"se da en oligofrénicos, esquizofrénicos, y también en algunas demencias.",1,0,FN,clandestino
+"es más fácil y barato obligar que incentivar, aunque estos subnormales no se den cuenta que lo que hacen es el efecto contrario",0,1,FP,clandestino
+"seguro que si a esta señora que se puso histérica cuando ronda le ladró, si le da por denunciarte ya que como dices, estaba gritando que le había atacado, estoy segura hubieses tenido todas las de perder",0,1,FP,clandestino
+"para empezar, ¿qué chingados estamos haciendo metidos en colombia?",1,0,FN,clandestino
+"puta, bollera o maricón son otros casos recientes de palabras acuñadas y usadas en su origen con intención peyorativa que han sido reclamadas y asumidas con orgullo por el propio colectivo insultado",1,0,FN,clandestino
+"y pese a que el cáncer de piel avanza y las autoridades médicas no hacen más que decirlo, esos seres persisten en querer ser ennegrecidos o bronceados; o sea lo mismo que las negras africanas, pero al revés… los blancos europeos quieren convertirse cuasi en mulatos",0,1,FP,clandestino
+"menudos mongolos, no tienen ni idea de lo que es el respeto y la educación",1,0,FN,clandestino
+"no se puede destacar ninguna canción, es un todo pleno de actitud, de talento, de épica bien entendida, de unas guitarras gloriosas, de unas melodías complejas y por momentos abrumadoras y de la mejor voz del puto brett anderson desde el mismísimo dog man star",0,1,FP,clandestino
+tiene chichis de gorila,1,0,FN,clandestino
+"porque todas las casonas de san miguel pertenecen a antiguas familias conocidas de aqui y tesoros encontrado generan un multitud de problemas y envidias ,,,hasta ni un peso te llevas si te va bien!!!! y acabas a la carcel",0,1,FP,clandestino
+"llevaba 22 días sin bajar a la calle, focalizado en cuestiones de prevención y en la responsabilidad personal y ciudadana ante la inesperada pandemia ocasionada por el covid-19, el virus chino-comunista que se esparció rápidamente para denigrar la vida humana a nivel local e internacional",1,0,FN,multilingual_toxicity_dataset_es

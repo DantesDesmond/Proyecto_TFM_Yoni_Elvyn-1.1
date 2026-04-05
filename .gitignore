@@ -5,7 +5,16 @@ __pycache__/
 .ipynb_checkpoints/
 .DS_Store
 Thumbs.db
+# Modelos pesados
 models/checkpoints/
 models/artifacts/
-outputs/
+# Secrets locales
+config/config_youtube_local.json
+outputs/*
 !outputs/.gitkeep
+!outputs/metrics/
+!outputs/metrics/**
+!outputs/tables/
+!outputs/tables/**
+!outputs/figures/
+!outputs/figures/**

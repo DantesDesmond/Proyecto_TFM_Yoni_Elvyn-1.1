@@ -1,0 +1,7 @@
+﻿model,split,f1_macro
+baseline,val,0.6916473943456654
+baseline,test,0.701255980861244
+baseline,external_validation_detoxis,0.580494107937702
+beto,val,0.7841510040230397
+beto,test,0.7671481112474902
+beto,external_validation_detoxis,0.6493372718707501
